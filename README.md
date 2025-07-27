@@ -1,5 +1,5 @@
 # Code_Tech_03
-##🔍 Overview of the CodTechBot Project
+## 🔍 Overview of the CodTechBot Project
 This chatbot is built using:
 
 NLTK: For natural language processing (tokenizing, lemmatizing).
@@ -25,7 +25,7 @@ tag: Unique name for the intent category (e.g., greeting).
 
 patterns: Sample user inputs (used to train the model).
 
-##🛠️ Step 2: Install & Import Required Libraries
+## 🛠️ Step 2: Install & Import Required Libraries
 
 ```python
 pip install nltk textblob scikit-learn
@@ -46,7 +46,7 @@ NLP (tokenizing, lemmatizing)
 Building ML models
 
 Handling JSON data
-##📦 Step 3: Download NLTK Resources
+## 📦 Step 3: Download NLTK Resources
 ```python
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -56,7 +56,7 @@ These are required for:
 punkt: Sentence splitting and tokenizing
 
 wordnet: For lemmatizing words (converting "running" → "run")
-##🧹 Step 4: Preprocessing Patterns
+## 🧹 Step 4: Preprocessing Patterns
 ```python
 lemmatizer = WordNetLemmatizer()
 ```
@@ -76,7 +76,7 @@ Lemmatizing = reducing words to their root form
 
 Cleaning = remove punctuation for consistency
 
-##🧾 Step 5: Convert Words into Numbers (Bag of Words)
+## 🧾 Step 5: Convert Words into Numbers (Bag of Words)
 ```python
 def bag_of_words(tokenized_sentence, all_words):
     ...
@@ -90,7 +90,7 @@ Input: "hello name" → [1, 0, 0, 1]
 
 This makes the data numerical, so machine learning models can understand it.
 
-##🏗️ Step 6: Create Dataset (X, y)
+ ##  Step 6: Create Dataset (X, y)
 ```python
 X_train = []
 y_train = []
@@ -107,7 +107,7 @@ X_train: List of bag-of-words vectors
 
 y_train: List of corresponding tag indices
 
-##🤖 Step 7: Train the Model
+## 🤖 Step 7: Train the Model
 ```python
 
 model = MultinomialNB()
@@ -132,7 +132,7 @@ Gets predicted tag and its confidence
 If confidence is above 50%, we return the tag.
 If not, we return "unknown" (to handle unrecognized input).
 
-##💬 Step 9: Generate a Response
+## 💬 Step 9: Generate a Response
 ```python
 def get_response(tag):
     ...
@@ -143,7 +143,7 @@ Randomly select a response from that intent
 
 If no match, return a fallback response like "I didn't understand".
 
-##🗃️ Step 10: Log the Conversation
+## 🗃️ Step 10: Log the Conversation
 ```python
 
 def log_chat(user, bot):
@@ -153,7 +153,7 @@ Saves each user input and bot response to chat_log.txt
 
 Helps for reviewing conversations or improving the bot
 
-##🧑‍💻 Step 11: Start the Chat (Console Version)
+## 🧑‍💻 Step 11: Start the Chat (Console Version)
 ```python
 
 def chat():
