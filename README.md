@@ -1,5 +1,5 @@
 # Code_Tech_03
-## 🔍 Overview of the CodTechBot Project
+## 🔍 Overview of the Urs ChatBot Project
 This chatbot is built using:
 
 NLTK: For natural language processing (tokenizing, lemmatizing).
@@ -157,7 +157,7 @@ Helps for reviewing conversations or improving the bot
 ```python
 
 def chat():
-    print("CodTechBot: Hello! Type 'quit' to exit.")
+    print("Urs ChatBot: Hello! Type 'quit' to exit.")
     ...
 ```
 Takes user input in a loop
