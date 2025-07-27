@@ -117,7 +117,7 @@ We use a Naive Bayes classifier (simple and effective for text).
 
 It learns to classify each sentence based on the words it contains.
 
-##🔍 Step 8: Predict Tags for User Input
+## 🔍 Step 8: Predict Tags for User Input
 ```python
 
 def predict_tag_with_confidence(sentence):
